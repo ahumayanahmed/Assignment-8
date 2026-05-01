@@ -7,7 +7,7 @@ const PhotoDetailsPage = async ({params}) => {
 
     const tile = photos.find(p => p.id == id)
 
-   
+    if (!tile) return <div>Not Found</div>;
 
     return (
         <div className="max-w-6xl mx-auto p-6">

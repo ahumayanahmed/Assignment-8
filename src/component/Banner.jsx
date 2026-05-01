@@ -15,7 +15,7 @@ const Banner = () => {
           </p>
 
           <div className="flex gap-4">
-            <Link href="#">
+            <Link href="/allphotos">
               <Button className="bg-linear-to-r from-pink-500 via-purple-500 bg-red-500">
                Browse Now
               </Button>

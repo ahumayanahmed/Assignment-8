@@ -19,7 +19,7 @@ const Footer = () => {
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
@@ -36,8 +36,7 @@ const Footer = () => {
             </div>
 
             <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 max-w-xs">
-              Create production-ready AI visuals in seconds. Built for speed,
-              scale, and creativity.
+             Explore our premium collection of tails designed to elevate youe spase 
             </p>
           </div>
 
@@ -47,14 +46,7 @@ const Footer = () => {
               Product
             </h3>
             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-              <li>
-                <Link
-                  href="/generate"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
-                  Generate
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   href="/allphotos"
@@ -103,25 +95,7 @@ const Footer = () => {
           </div>
 
           {/* CTA Block */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-black dark:text-white">
-              Start creating
-            </h3>
-
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Generate your first AI image today.
-            </p>
-
-            <Link
-              href="/signup"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full 
-              bg-black text-white dark:bg-white dark:text-black 
-              text-sm font-medium transition-all duration-200 
-              hover:scale-[1.02] hover:shadow-lg hover:shadow-black/10 dark:hover:shadow-white/10"
-            >
-              Get Started
-            </Link>
-          </div>
+          
         </div>
 
         {/* Divider */}
