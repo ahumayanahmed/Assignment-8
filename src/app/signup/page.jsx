@@ -55,10 +55,13 @@ export default function SignUpPage() {
         </TextField>
 
         <TextField isRequired name="image" type="text">
-          <Label>Image URL</Label>
-          <Input placeholder="Image URL" />
-          <FieldError />
-        </TextField>
+  <Label>Image URL</Label>
+  <Input
+    placeholder="Image URL"
+    name="image"
+  />
+  <FieldError />
+</TextField>
 
         <TextField
           isRequired
