@@ -1,25 +1,36 @@
-import PhotoCard from '@/component/PhotoCard';
-import { Button, Card, Chip } from '@heroui/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import PhotoCard from "@/component/PhotoCard";
+import SearchBox from "@/component/SearchBox";
 
-const Allpage = async() => {
-    const res = await fetch('http://localhost:3000/data.json')
-    const photos = await res.json()
-    return (
+const Allpage = async ({ searchParams }) => {
+  const params = await searchParams;
 
-        <div className='grid grid-cols-4 gap-5 mt-10'>
-            {
-                photos.map(photo=> <PhotoCard key={photo.id} photo={photo}/>)
-            }
+  const query = decodeURIComponent(params?.q || "")
+    .toLowerCase()
+    .trim();
 
-        </div>
-        
-           
+  const res = await fetch("http://localhost:3000/data.json", {
+    cache: "no-store",
+  });
 
-        
-    );
+  const photos = await res.json();
+
+  const filteredPhotos = query
+    ? photos.filter((photo) =>
+        photo.title.toLowerCase().includes(query)
+      )
+    : photos;
+
+  return (
+    <div>
+      <SearchBox />
+
+      <div className="grid grid-cols-4 gap-5 mt-10">
+        {filteredPhotos.map((photo) => (
+          <PhotoCard key={photo.id} photo={photo} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Allpage;
