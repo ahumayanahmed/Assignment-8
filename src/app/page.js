@@ -1,9 +1,11 @@
+import Footer from "@/component/footer/Footer";
 
 
 export default function Home() {
   return (
     <div >
-      <h1>humayan</h1>
+      
+      <Footer/>
 
     </div>
   );
