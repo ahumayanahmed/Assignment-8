@@ -25,13 +25,13 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <Image
                 src="/logo.png"
-                alt="pixgen logo"
+                alt="logo"
                 width={32}
                 height={32}
                 className="dark:brightness-200"
               />
               <h2 className="text-xl font-semibold tracking-tight text-black dark:text-white">
-                pixgen
+                Tail Gailery
               </h2>
             </div>
 
@@ -57,19 +57,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/all-photos"
+                  href="/allphotos"
                   className="hover:text-black dark:hover:text-white transition"
                 >
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/pricing"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
-                  Pricing
-                </Link>
+                
               </li>
             </ul>
           </div>

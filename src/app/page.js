@@ -1,4 +1,5 @@
 import Banner from "@/component/Banner";
+import TopGenerations from "@/component/TopGenerations";
 
 
 
@@ -7,7 +8,7 @@ export default function Home() {
     <div >
       <Banner/>
       
-
+<TopGenerations/>
 
     </div>
   );
