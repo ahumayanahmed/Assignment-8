@@ -20,24 +20,12 @@ const PhotoCard = ({photo}) => {
 
             <div>
                 <h2 className="font-medium">{photo.title}</h2>
+                <p className="font-medium">Price: {photo.price} {photo.currency}</p>
             </div>
 
-           <div className="flex gap-5">
-             <div className="flex items-center gap-2">
-                <p><FaHeart /></p>
-                <p>{photo.likes}</p>
-            </div>
+           
 
-            <Separator orientation="vertical"/>
-
-
-               <div className="flex items-center gap-2">
-                <p><BiDownload /></p>
-                <p>{photo.downloads}</p>
-            </div>
-           </div>
-
-     <Link href={`/all-photos/${photo.id}`}>      <Button variant="outline" className={'w-full'}>View</Button></Link>
+     <Link href={`/allphotos/${photo.id}`}> <Button variant="outline" className={'w-full'}>View</Button></Link>
             
         </Card>
     );
