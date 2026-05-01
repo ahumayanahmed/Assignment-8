@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="bg-[url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop')] h-[60vh] w-full bg-cover bg-no-repeat bg-center flex items-center rounded-lg shadow-2xl">
+    <div className="bg-[url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop')] h-[60vh] w-full bg-cover bg-no-repeat bg-center flex items-center rounded-lg shadow-2xl mt-10">
       {/* Overlay */}
       <div className="w-full h-full rounded-lg bg-black/50 flex items-center ">
         <div className="max-w-7xl mx-auto px-6 text-white">
@@ -20,8 +20,6 @@ const Banner = () => {
                Browse Now
               </Button>
             </Link>
-
-           
           </div>
         </div>
       </div>

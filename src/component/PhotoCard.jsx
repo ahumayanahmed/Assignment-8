@@ -1,8 +1,12 @@
 import { Button, Card, Chip, Separator } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+
+
 const PhotoCard = ({photo}) => {
     return (
+        
+
         <Card className="border rounded-xl">
             <div className="relative w-full aspect-square">
             <Image
@@ -26,6 +30,7 @@ const PhotoCard = ({photo}) => {
      <Link href={`/allphotos/${photo.id}`}> <Button variant="outline" className={'w-full'}>View</Button></Link>
             
         </Card>
+       
     );
 };
 
