@@ -1,11 +1,13 @@
-import Footer from "@/component/footer/Footer";
+import Banner from "@/component/Banner";
+
 
 
 export default function Home() {
   return (
     <div >
+      <Banner/>
       
-      <Footer/>
+
 
     </div>
   );
