@@ -35,11 +35,13 @@ export default function SignUpPage() {
     })
     
 
-    console.log({data, error})
+     if (error) {
+  toast.error("Signup failed, please try again");
+  return;
+}
 
-    if(!error) {
-        router.push('/')
-    }
+toast.success("Successfully signed up");
+router.push("/");
 
   };
 

@@ -25,8 +25,14 @@ export default function SignInPage() {
       password,
       callbackURL: "/",
     });
+    if (error) {
+  toast.error("Invalid email or password");
+  return;
+}
 
-    console.log({ data, error });
+toast.success("Successfully signed in");
+
+    
   };
 
   const handlGoogleSignIn = async () => {
