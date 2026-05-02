@@ -20,10 +20,10 @@ const TopGenerations = async () => {
         </Marquee>
       </div>
       {/* TITLE */}
-      <h1 className="text-2xl font-bold my-5">Top Four</h1>
+      <h1 className="text-2xl font-bold  my-5">Top Four</h1>
 
       {/* GRID */}
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-5">
         {topPhotos.map((photo) => (
           <div key={photo.id} className="flex flex-col gap-2">
 
