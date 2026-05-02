@@ -3,9 +3,7 @@ import Marque from "./Marque";
 import PhotoCard from "./PhotoCard";
 
 const TopGenerations = async () => {
-  const res = await fetch("http://localhost:3000/data.json", {
-    cache: "no-store",
-  });
+  const res = await fetch("https://assignment-8-phi-three.vercel.app/data.json");
   const photos = await res.json();
   const topPhotos = photos.slice(0, 4);
 
